@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <eType>Apparel</eType>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useStandardHealth>True</useStandardHealth>
+    <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    <statBases>
+      <MaxHealth>100</MaxHealth>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <tradersCarry>true</tradersCarry>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="ApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <skillToGain>Crafting</skillToGain>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+        <recipeUsers>
+        <li>TableTailor</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef> 
+
+<!-- If this doesn't work, I'm going to throw a brick at my television. -->
+
+ <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_CloneArmor</defName>
+    <label>clone armor</label>
+    <description>Standard Phase-I clone trooper armor.</description>
+    <graphicPath>Things/Apparel/Clones/PhaseI</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.30</ArmorRating_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <ComfyTemperatureMin>-45</ComfyTemperatureMin>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Arms</li>
+        <li>Hands</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <worngraphicPath>Things/Apparel/Clones/PhaseI</worngraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <commonality>2</commonality>
+      <tags>
+        <liClone</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+<!-- ==================== HELMETS/HATS ================ -->
+
+ <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_CloneArmorHelmet</defName>
+    <label>clone armor helmet</label>
+    <description>A part of the standardized Phase-I armor set.</description>
+    <graphicPath>Things/Apparel/Clones/PhaseIHelmet</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.4</ArmorRating_Heat>
+      <ArmorRating_Electric>0.1</ArmorRating_Electric>
+    </statBases>
+    <equippedStatOffsets>
+      <ComfyTemperatureMax>25</ComfyTemperatureMax>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Things/Apparel/Clones/PhaseIHelmet</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>2</commonality>
+      <tags>
+        <li>Clone</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>RGBA(0.3,0.3,0.3,1)</min>
+          <max>RGBA(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+  </ThingDefs>
