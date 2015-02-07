@@ -11,14 +11,14 @@
 *Finished:*
 - None
 
-*In-Progress:*
+*In-Progress:* --Anything under this category still needs to be tested.--
 - Double-Bladed Lightsabers
 - Lightsabers
+- Old Republic faction
+- Clone Armours
 
 *Incomplete:*
-- CIS and Old Republic Factions
 - A few droid pawns
-- Clone Armours
 - Transparent droid armours (stats for droids)
 - Guns for each faction
 
