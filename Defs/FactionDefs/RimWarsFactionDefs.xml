@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FactionDefs>
+
+  <FactionDef>
+		<defName>OldRepublic</defName>
+		<label>Old Republic Colony</label>
+    <description>A colony established on this rim-world planet was set up by the Old Republic. /n/ They most likely colonized this planet as a source for credit income. /n/ They boast professional armies and squads.</description>
+    <pawnsPlural>clones</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <raidCommonality>25</raidCommonality>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <startingGoodwill>
+      <min>-10</min>
+      <max>100</max>
+    </startingGoodwill>
+		<factionNameMaker>NamerFactionRepublic</factionNameMaker>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategory>Civil</backstoryCategory>
+		<hairTags>
+			<li>Rural</li>
+		</hairTags>
+    <naturalColonyGoodwill>
+      <min>-10</min>
+      <max>100</max>
+    </naturalColonyGoodwill>
+		<spawnGroups>
+			<li>
+				<selectionWeight>10</selectionWeight>
+				<kinds>
+					<li>Clone</li>
+					<li>Clone</li>
+					<li>Clone</li>
+					<li>Clone</li>
+				</kinds>
+			</li>
+      <li>
+        <selectionWeight>100</selectionWeight>
+        <kinds>
+          <li>CloneHeavy</li>
+          <li>Clone</li>
+          <li>Clone</li>
+        </kinds>
+      </li>    
+      <li>
+        <selectionWeight>250</selectionWeight>
+        <kinds>
+          <li>Clone</li>
+          <li>Clone</li>
+          <li>Clone</li>
+          <li>CloneCommando</li>
+        </kinds>
+      </li> 
+		</spawnGroups>
+    <homeIconPath>World/FactionHomes/DefaultHome</homeIconPath>
+    <homeIconColor>(80,204,80)</homeIconColor>
+  </FactionDef>
+  
+  </FactionDefs>
