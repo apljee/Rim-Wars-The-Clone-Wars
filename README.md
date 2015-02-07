@@ -12,13 +12,18 @@
 - None
 
 *In-Progress:*
-- None
+- Double-Bladed Lightsabers
+- Lightsabers
 
 *Incomplete:*
-- None
+- CIS and Old Republic Factions
+- A few droid pawns
+- Clone Armours
+- Transparent droid armours (stats for droids)
+- Guns for each faction
 
 *Postponed:*
-- None
+- Shock Damage Type
 
 -------------------------------
 
