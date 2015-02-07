@@ -38,7 +38,7 @@
     <defName>DoubleRed_Lightsaber</defName>
     <label>Double Red Lightsaber</label>
     <description>Reliable and deadly in melee combat.</description>
-    <graphicPath>Things/Item/WeaponMelee/Double-bladed</graphicPath>
+    <graphicPath>Things/Item/WeaponMelee/DoubleRed</graphicPath>
     <graphicClass>Graphic_Single</graphicClass>
     <soundInteract>LightsaberSound</soundInteract>
     <tradersCarry>True</tradersCarry>
@@ -65,6 +65,104 @@
     
     </verbs>
   </ThingDef>
+  
+    <ThingDef ParentName="BaseMeleeWeapon">
+    <defName>DoubleBlue_Lightsaber</defName>
+    <label>Double Blue Lightsaber</label>
+    <description>Reliable and deadly in melee combat.</description>
+    <graphicPath>Things/Item/WeaponMelee/DoubleBlue</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <soundInteract>LightsaberSound</soundInteract>
+    <tradersCarry>True</tradersCarry>
+		<statBases>
+			<MarketValue>10000</MarketValue>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+            <ArmorRating_Heat>0.30</ArmorRating_Heat>
+		</statBases>
+
+    <equippedStatOffsets>
+      <MoveSpeed>5</MoveSpeed>
+    </equippedStatOffsets>
+
+    <equippedAngleOffset>-40</equippedAngleOffset>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <baseCooldownTicks>20</baseCooldownTicks>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageBaseAmount>400</meleeDamageBaseAmount>
+        <meleeDamageDef>PlasmaCut</meleeDamageDef>
+      </li>
+    
+    </verbs>
+  </ThingDef>
+  
+      <ThingDef ParentName="BaseMeleeWeapon">
+    <defName>DoubleGreen_Lightsaber</defName>
+    <label>Double Green Lightsaber</label>
+    <description>Reliable and deadly in melee combat.</description>
+    <graphicPath>Things/Item/WeaponMelee/DoubleGreen</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <soundInteract>LightsaberSound</soundInteract>
+    <tradersCarry>True</tradersCarry>
+		<statBases>
+			<MarketValue>10000</MarketValue>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+            <ArmorRating_Heat>0.30</ArmorRating_Heat>
+		</statBases>
+
+    <ThingDef ParentName="BaseMeleeWeapon">
+    <defName>DoublePink_Lightsaber</defName>
+    <label>Double Pink Lightsaber</label>
+    <description>Reliable and deadly in melee combat.</description>
+    <graphicPath>Things/Item/WeaponMelee/DoublePink</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <soundInteract>LightsaberSound</soundInteract>
+    <tradersCarry>True</tradersCarry>
+		<statBases>
+			<MarketValue>10000</MarketValue>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+            <ArmorRating_Heat>0.30</ArmorRating_Heat>
+		</statBases>
+
+    <equippedStatOffsets>
+      <MoveSpeed>5</MoveSpeed>
+    </equippedStatOffsets>
+
+    <equippedAngleOffset>-40</equippedAngleOffset>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <baseCooldownTicks>20</baseCooldownTicks>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageBaseAmount>400</meleeDamageBaseAmount>
+        <meleeDamageDef>PlasmaCut</meleeDamageDef>
+      </li>
+    
+    </verbs>
+  </ThingDef>
+  
+
+    <equippedStatOffsets>
+      <MoveSpeed>5</MoveSpeed>
+    </equippedStatOffsets>
+
+    <equippedAngleOffset>-40</equippedAngleOffset>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <baseCooldownTicks>20</baseCooldownTicks>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageBaseAmount>400</meleeDamageBaseAmount>
+        <meleeDamageDef>PlasmaCut</meleeDamageDef>
+      </li>
+    
+    </verbs>
+  </ThingDef>
+  
   
   <ThingDef ParentName="BaseMeleeWeapon">
     <defName>Green_Lightsaber</defName>
@@ -159,6 +257,35 @@
     </verbs>
   </ThingDef>
   
-  
+     <ThingDef ParentName="BaseMeleeWeapon">
+    <defName>Pink_Lightsaber</defName>
+    <label>Pink Lightsaber</label>
+    <description>Reliable and deadly in melee combat.</description>
+    <graphicPath>Things/Item/WeaponMelee/Pink</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <soundInteract>LightsaberSound</soundInteract>
+    <tradersCarry>True</tradersCarry>
+		<statBases>
+			<MarketValue>5000</MarketValue>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+            <ArmorRating_Heat>0.30</ArmorRating_Heat>
+		</statBases>
+
+		<equippedStatOffsets>
+      <MoveSpeed>5</MoveSpeed>
+    </equippedStatOffsets>
+
+    <equippedAngleOffset>-40</equippedAngleOffset>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <baseCooldownTicks>20</baseCooldownTicks>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageBaseAmount>200</meleeDamageBaseAmount>
+        <meleeDamageDef>PlasmaCut</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
 
 </ThingDefs>
