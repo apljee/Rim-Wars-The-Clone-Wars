@@ -24,6 +24,8 @@
 
 *Postponed:*
 - Shock Damage Type
+- Shock Whip
+- LJ-50 Concussion Rifle (Both waiting on shock damage)
 
 -------------------------------
 
