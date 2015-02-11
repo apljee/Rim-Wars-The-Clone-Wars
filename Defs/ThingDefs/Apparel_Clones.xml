@@ -74,7 +74,8 @@
       </layers>
       <commonality>2</commonality>
       <tags>
-        <liClone</li>
+        <li>Clone</li>
+		<li>CloneCommando</li>
       </tags>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
@@ -130,6 +131,7 @@
       <commonality>2</commonality>
       <tags>
         <li>Clone</li>
+		<li>CloneCommando</li>
       </tags>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PawnKindDefs>
+
+
+
+
+  <PawnKindDef>
+    <defName>CISdroid</defName>
+    <label>CIS Droid</label>
+    <race>CISdroid</race>
+    <pointsCost>20</pointsCost>
+	<standardBodygraphicPath>Pawn/Droid/CIS</standardBodygraphicPath>
+    <defaultFactionType>CIS</defaultFactionType>
+	<baseRecruitDifficulty>80</baseRecruitDifficulty>
+    <backstoryCategory>Raider</backstoryCategory>
+    <isFighter>true</isFighter>
+    <invFoodCount>1</invFoodCount>
+    <itemQuality>Good</itemQuality>
+    <startHealthPercentRange>
+      <min>0.55</min>
+      <max>0.80</max>
+    </startHealthPercentRange>
+	<weaponMoney>
+      <min>0</min>
+      <max>300</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+      <li>Melee</li>
+    </weaponTags>
+  </PawnKindDef>
+
+
+</PawnKindDefs>

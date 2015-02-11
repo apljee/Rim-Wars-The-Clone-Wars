@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<HealthDiffDefs>
+
+	<!-- Injuries -->
+
+	<HealthDiffDef>
+		<defName>PlasmaCut</defName>
+		<label>Plasma cut</label>
+		<naturallyHealed>true</naturallyHealed>
+		<injury>
+			<painPerDamage>2</painPerDamage>
+			<oldLabel>Plasma cut scar</oldLabel>
+			<oldPainPerDamage>1</oldPainPerDamage>
+			<bleeding>0</bleeding>
+			<becomeOldChance>1</becomeOldChance>
+			<infectionChance>0.0</infectionChance>
+			<combine>false</combine>
+			<destroyedLabel>Cut off and quarterized</destroyedLabel>
+			<destroyedOutLabel>Cut out</destroyedOutLabel>
+			<treatedWellLabel>bandaged</treatedWellLabel>
+			<treatedLabel>poorly bandaged</treatedLabel>
+			<innerTreatedWellLabel>sutured</innerTreatedWellLabel>
+			<innerTreatedLabel>poorly sutured</innerTreatedLabel>
+			<solidTreatedWellLabel>set</solidTreatedWellLabel>
+			<solidTreatedLabel>poorly set</solidTreatedLabel>
+		</injury>
+	</HealthDiffDef>
+	
+	<HealthDiffDef>
+		<defName>ElectricalStrike</defName>
+		<label>Electrical Strike</label>
+		<naturallyHealed>true</naturallyHealed>
+		<injury>
+			<painPerDamage>5</painPerDamage>
+			<oldLabel>Electrical Strike scar</oldLabel>
+			<oldPainPerDamage>1</oldPainPerDamage>
+			<bleeding>-0.2</bleeding>
+			<becomeOldChance>1</becomeOldChance>
+			<infectionChance>0.0</infectionChance>
+			<combine>false</combine>
+			<destroyedLabel>burned</destroyedLabel>
+			<destroyedOutLabel>Struck out</destroyedOutLabel>
+			<treatedWellLabel>bandaged</treatedWellLabel>
+			<treatedLabel>poorly bandaged</treatedLabel>
+			<innerTreatedWellLabel>sutured</innerTreatedWellLabel>
+			<innerTreatedLabel>poorly sutured</innerTreatedLabel>
+			<solidTreatedWellLabel>set</solidTreatedWellLabel>
+			<solidTreatedLabel>poorly set</solidTreatedLabel>
+		</injury>
+	</HealthDiffDef>
+
+</HealthDiffDefs>

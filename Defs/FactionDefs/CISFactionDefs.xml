@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FactionDefs>
+  
+  <!-- Special non-humanoid factions -->
+
+  <FactionDef>
+    <defName>CIS</defName>
+    <label>CIS Base</label>
+    <description>A Base for the local CIS droids.</description>
+    <pawnsPlural>CIS Droidss</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>a CIS Base</fixedName>
+    <raidCommonality>45</raidCommonality>
+    <humanoidFaction>false</humanoidFaction>
+    <hidden>false</hidden>
+    <canFlee>false</canFlee>
+    <techLevel>Ultra</techLevel>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <spawnGroups>
+      <li>
+        <selectionWeight>100</selectionWeight>
+        <kinds>
+          <li>CISdroid</li>
+        </kinds>
+      </li>
+    </spawnGroups>
+    <homeIconPath>World/FactionHomes/DefaultHome</homeIconPath>
+    <homeIconColor>(150,150,150)</homeIconColor>
+  </FactionDef>
+
+
+
+</FactionDefs>

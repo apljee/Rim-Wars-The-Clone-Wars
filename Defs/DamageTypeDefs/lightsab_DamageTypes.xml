@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+	If healthDiffSkin or healthDiffSolid is not specified, then healthDiff is used.
+-->
+
+<DamageTypes>
+
+  <!-- Local injuries -->
+
+  <DamageTypeDef Name="LocalInjuryBase" Abstract="True">
+    <workerClass>DamageType_AddLocalInjury</workerClass>
+  </DamageTypeDef>
+
+  <DamageTypeDef ParentName="LocalInjuryBase">
+    <defName>PlasmaCut</defName>
+    <label>Plasma Cut</label>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been cut to death with a Plasma Blade.</deathMessage>
+    <healthDiff>PlasmaCut</healthDiff>
+    <healthDiffSkin>PlasmaCut</healthDiffSkin>
+    <healthDiffSolid>PlasmaCut</healthDiffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside> 
+     <impactSoundType>Slice</impactSoundType>
+  </DamageTypeDef>
+  
+  <DamageTypeDef ParentName="LocalInjuryBase">
+    <defName>ElectricalStrike</defName>
+    <label>Electrical Strike</label>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} The body has had a large amount of electricity not good.</deathMessage>
+    <healthDiff>ElectricalStrike</healthDiff>
+    <healthDiffSkin>ElectricalStrike</healthDiffSkin>
+    <healthDiffSolid>ElectricalStrike</healthDiffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside> 
+     <impactSoundType>Blunt</impactSoundType>
+  </DamageTypeDef>
+  
+  <DamageTypeDef Name="MKBStunBase" Abstract="True">
+	<workerClass>DamageType_AddLocalInjury</workerClass>
+    <harmsHealth>true</harmsHealth>
+    <makesBlood>true</makesBlood>
+  </DamageTypeDef>
+  
+  <DamageTypeDef ParentName="MKBStunBase">
+    <defName>MKB_Stun</defName>
+    <label>stun</label>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been stunned to death.</deathMessage>
+	<healthDiff>Crush</healthDiff>
+    <healthDiffSkin>Crush</healthDiffSkin>
+    <healthDiffSolid>Crack</healthDiffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+  </DamageTypeDef>
+
+
+</DamageTypes>
